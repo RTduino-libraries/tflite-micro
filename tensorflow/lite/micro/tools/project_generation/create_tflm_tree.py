@@ -292,8 +292,8 @@ def main():
   if args.no_copy is False:
     _copy(src_files, dest_files)
 
-  if args.examples is not None:
-    _create_examples_tree(args.output_dir, args.examples, tensorflow_root)
+  # if args.examples is not None:
+  #   _create_examples_tree(args.output_dir, args.examples, tensorflow_root)
 
   if args.rename_cc_to_cpp:
     _rename_cc_to_cpp(args.output_dir)
